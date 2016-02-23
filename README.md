@@ -13,6 +13,7 @@
         return itemWidth * shop.h / shop.w;
     };
 4.如需改变布局的属性 行间距/列间距/四周边距等可参考如下代码或者demo:
+
       //设置item的行间距
     flowLayout.rowMargin = ^{
         return 30.0;
