@@ -6,13 +6,13 @@
 3.实例化YJYYWaterFlowLayout 并在实例化UICollectionView时传入我们这里自定义的布局 代码如下
 
  YJYYWaterFlowLayout * flowLayout = [[YJYYWaterFlowLayout alloc]init];
-    
     //设置item的高度 这句话必须实现
     flowLayout.itemHeight = ^(NSInteger index, CGFloat itemWidth){
         //取出商品信息
         YJYYShop * shop = self.shops[index];
         return itemWidth * shop.h / shop.w;
     };
+    UICollectionView * collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
 4.如需改变布局的属性 行间距/列间距/四周边距等可参考如下代码或者demo:
 
       //设置item的行间距
