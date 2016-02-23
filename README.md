@@ -4,6 +4,7 @@
 2.导入头文件 #import "YJYYWaterFlowLayout.h"
 
 3.实例化YJYYWaterFlowLayout 并在实例化UICollectionView时传入我们这里自定义的布局 代码如下
+
  YJYYWaterFlowLayout * flowLayout = [[YJYYWaterFlowLayout alloc]init];
     
     //设置item的高度 这句话必须实现
